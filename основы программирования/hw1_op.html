@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var menu = prompt ("Chto budem delat? \nКонвертировать рубли в доллары и евро (1) \nили вычислять площадь трапеции? (2)")
+menu = parseInt (menu);
+
+if (menu == 1) {	
+var dollar = 70
+var euro = 65
+var rub = prompt ("Сколько поменять рублей?");
+var inDollars = rub / dollar;
+var inEuro = rub / euro;
+
+alert ("за " + rub + " рублей вы получите \n" + inDollars.toFixed(2) + " долларов или \n" + inEuro.toFixed(2) + " евро");}
+
+else if (menu == 2) {
+
+	var osnova1 = prompt ("длина нижнего основания?");
+	var osnova2 = prompt ("длина верхнего основания?");
+	var h = prompt ("высота?");
+	var s = (osnova1 + osnova2) / h;
+
+	alert ("площадь трапеции " + h);
+}
+ else {
+ 	alert ("не можешь выбрать 1 или 2?");
+ }
+
+
+
+</script>
