@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<script>
+
+var imya = prompt ("Имя!")
+
+alert("ну, здорова, " + imya + "!");
+
+var message = "заходи..."
+
+//alert("привет мир");
+//alert(message);
+//alert("гостем будешь");
+
+var answer1 = prompt ("Сыграем в игру? 1 - да, остальное - нет")
+
+if (answer1 == 1) {
+	
+	var n = +prompt("enter number");
+do{if (n <= 0){
+	n = +prompt("X > 0 needed");
+}
+else if (isNaN(n)){
+	n = +prompt("нужны цифры!");
+}
+}while (n<=0 || isNaN(n));
+
+var sum = 0;
+for (var i = 0; i<= n; i++){
+	sum = sum+i;
+	document.write (i + " " + sum + "<br>");
+} 
+
+
+} else alert ("как хошь...");
+
+
+</script>
